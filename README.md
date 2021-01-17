@@ -1,3 +1,5 @@
+[![donate button](https://img.shields.io/badge/$-donate-ff69b4.svg?maxAge=2592000&amp;style=flat)](https://github.com/haxpor/donate)
+
 # makefile_cpp_sample
 Just a sample C++ built with Makefile to remind myself about target usage in Makefile
 
