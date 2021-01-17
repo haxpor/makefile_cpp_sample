@@ -37,13 +37,15 @@ is based on filename as target thus whenever you include a target name inside `.
 that thing as such and it will always try to build that target. So its dependent target of that one
 will also be affected, and thus be built unnecessily.
 
-** Symptom **
+### Symptom
+
 The symptom will show that Makefile will **always** build a target even without any changes has been made.
 
-** Solution **
+### Solution
+
 Remove such target from `.PHONY`.
 
-** So in short ...**
+### So in short ...
 In short, look at `Makefile` in this repository, and **don't** include
 `main.out` as part of `.PHONY` otherwise Makefile will always build `main.out` (regarded as target)
 even no changes made.
