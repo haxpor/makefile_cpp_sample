@@ -1,7 +1,26 @@
 # makefile_cpp_sample
 Just a sample C++ built with Makefile to remind myself about target usage in Makefile
 
+# Project
+
+Sample project used in this repository for Makefile demonstration has the following setup.
+
+* library project built as shared library (.so) - `util.cpp`, and `util.h`
+* main program which consumes such library - `main.cpp`
+
+The project utilizes Makefile to build.
+
 # Makefile
+
+It provides the following targets (not include internal targets although can be used, but not as part of concern for users)
+
+* `all` - build both library, and main program (didn't execute a binary executable)
+* `lib` - build library as shared library (.so)
+* `main` - build main program as an executable binary
+* `clean` - remove all artifact files
+* `test` - to execute the executable binary (you might have to set `LD_LIBRARY_PATH` to current directory first externally via `export LD_LIBRARY_PATH=$PWD`)
+
+# Notice on Makefile
 
 Key an eye on the Makefile's target, and `.PHONY`. They are related to each other.
 
